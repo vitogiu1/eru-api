@@ -10,9 +10,9 @@ const fetch = require('node-fetch')
         return fetch(`https://eru.discordlist.cf/api/bots/stats`, {
             method: 'POST',
             headers: {
-                'serverCount': this.token,
+                'serverCount': servidores,
                 'Content-Type': 'application/json',
-                'Authorization': servidores
+                'Authorization': this.token
             }
         }).then(console.log('Postado!'))
 
